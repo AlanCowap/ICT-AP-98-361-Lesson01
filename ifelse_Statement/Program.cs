@@ -14,6 +14,7 @@ namespace ifelse_Statement
             TestIfElse(11);
             TestIfElse(21);
             TestIfElse(31);
+            //TestIfElse("oops");   // Compiler complains, TestIfElse(int) takes an int datatype as argument, not a String.
         }
 
         public static void TestIfElse(int n)
