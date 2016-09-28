@@ -15,6 +15,8 @@ namespace switch_Statement
             TestSwitch(10, 20, '*');
             TestSwitch(10, 20, '/');
             TestSwitch(10, 20, '?');
+
+            TestSwitchFallThrough();
         }
 
         public static void TestSwitch(int op1, int op2, char opr)
@@ -30,6 +32,24 @@ namespace switch_Statement
             }
             Console.WriteLine("Result: {0}", result);
             return;
+        }
+
+        public static void TestSwitchFallThrough()
+        {
+            DateTime dt = DateTime.Today;
+            switch(dt.DayOfWeek)
+            {
+                case DayOfWeek.Monday:
+                case DayOfWeek.Tuesday:
+                case DayOfWeek.Wednesday:
+                case DayOfWeek.Thursday:
+                case DayOfWeek.Friday:
+                    Console.WriteLine("Today is a weekday");
+                    break;
+                default:
+                    Console.WriteLine("Today is a weekend day, yippee!");
+                    break;
+            }
         }
 
     }
