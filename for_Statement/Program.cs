@@ -14,6 +14,8 @@ namespace for_Statement
             {
                 Console.WriteLine("for: The value of i is {0}", i);
             }
+
+            // for (;;) ;   //infinite loop - also looks cool :)
         }
     }
 }
