@@ -19,7 +19,7 @@ namespace trycatchfinally
             StreamReader sr = null;
             try
             {
-                sr = File.OpenText(@"c:\code\data.txt");
+                sr = File.OpenText(@"c:\code\data.txt"); //Note that @ essentially tells the compiler to treat the subsequent string without escape characters
                 Console.WriteLine(sr.ReadToEnd());
             }
             catch (FileNotFoundException fnfe)
