@@ -14,7 +14,7 @@ namespace RecursiveFactorial
             Console.WriteLine("Facternary: The result is {0}", Facternary(5));
         }
 
-        public static int Factorial(int n)
+        private static int Factorial(int n)
         {
             if(n == 0)
             {
@@ -31,7 +31,7 @@ namespace RecursiveFactorial
          * In all cases, but 1, the value of n is non-zero so it is more efficient to evaluate the most frequent case first.
          * We should also validate the input to ensure n is a member of the Natural numbers i.e. a positive whole number including zero
          */
-        public static int Facternary(int n)
+        private static int Facternary(int n)
         {
             return n != 0 ? n * Facternary(n - 1) : 1;
         }

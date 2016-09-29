@@ -10,6 +10,11 @@ namespace dowhile_Statement
     {
         static void Main(string[] args)
         {
+            DoWhileTest();
+        }
+
+        private static void DoWhileTest()
+        {
             int i = 1;
             do
             {

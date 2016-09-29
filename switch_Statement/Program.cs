@@ -19,7 +19,7 @@ namespace switch_Statement
             TestSwitchFallThrough();
         }
 
-        public static void TestSwitch(int op1, int op2, char opr)
+        private static void TestSwitch(int op1, int op2, char opr)
         {
             int result;
             switch(opr)
@@ -34,7 +34,7 @@ namespace switch_Statement
             return;
         }
 
-        public static void TestSwitchFallThrough()
+        private static void TestSwitchFallThrough()
         {
             DateTime dt = DateTime.Today;
             switch(dt.DayOfWeek)

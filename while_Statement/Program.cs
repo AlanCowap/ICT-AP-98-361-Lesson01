@@ -13,7 +13,7 @@ namespace while_Statement
             WhileTest();
         }
 
-        public static void WhileTest()
+        private static void WhileTest()
         {
             int i = 1;
             while (i <= 5)

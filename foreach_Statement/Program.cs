@@ -13,7 +13,7 @@ namespace foreach_Statement
             ForEachTest();
         }
 
-        public static void ForEachTest()
+        private static void ForEachTest()
         {
             int[] numbers = { 1, 2, 3, 4, 5 };
             foreach(int i in numbers)
